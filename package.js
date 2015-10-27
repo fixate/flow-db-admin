@@ -15,10 +15,9 @@ Package.onUse(function(api) {
 
   both = ['client','server']
 
-  api.use(
-    [
+  api.use([
     'coffeescript',
-    'underscore',
+    'stevezhu:lodash',
     'reactive-var',
     'meteorhacks:unblock@1.1.0',
     'kadira:flow-router@2.6.2',
@@ -33,8 +32,7 @@ Package.onUse(function(api) {
     'momentjs:moment@2.10.6',
     'aldeed:tabular@1.4.0',
     'mfactory:admin-lte@0.0.2'
-    ],
-    both);
+  ], both);
 
   api.use(['less@1.0.0 || 2.5.0','session','jquery','templating'],'client')
 
